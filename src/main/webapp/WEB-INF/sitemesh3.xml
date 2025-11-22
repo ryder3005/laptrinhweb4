@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+    <mapping>
+        <pattern>/*</pattern>
+        <decorator>admin.jsp</decorator>
+    </mapping>
+
+<!--    <mapping>-->
+<!--        <pattern>/user/*</pattern>-->
+<!--        <decorator>/WEB-INF/decorators/user.jsp</decorator>-->
+<!--    </mapping>-->
+
+<!--    <mapping>-->
+<!--        <pattern>/*</pattern>-->
+<!--        <decorator>/WEB-INF/decorators/default.jsp</decorator>-->
+<!--    </mapping>-->
+</sitemesh>
