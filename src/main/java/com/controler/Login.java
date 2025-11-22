@@ -69,16 +69,17 @@ public class Login extends HttpServlet {
                 if (isRememberMe){
                     saveRemeberMe(resp, email);
                 }
-                boolean roleId=user.getActive();
-                session.setAttribute("roleId",roleId);
-                req.setAttribute("message","xin chao" + user.getUsername());
-                // Chuyển hướng về trang home hoặc dashboard
-                System.out.println("xin chao"+user.getUsername()+" roleId"+roleId);
-                if (!roleId){
-                    resp.sendRedirect(req.getContextPath() + "/user/home");
-                }else{
-                    resp.sendRedirect(req.getContextPath() + "/admin/home");
-                }
+                resp.sendRedirect(req.getContextPath() + "/profile");
+//                boolean roleId=user.getAdmin();
+//                session.setAttribute("roleId",roleId);
+//                req.setAttribute("message","xin chao" + user.getUsername());
+//                // Chuyển hướng về trang home hoặc dashboard
+//                System.out.println("xin chao"+user.getUsername()+" roleId"+roleId);
+//                if (!roleId){
+//                    resp.sendRedirect(req.getContextPath() + "/profile");
+//                }else{
+//                    resp.sendRedirect(req.getContextPath() + "/admin/home");
+//                }
 
 
             }

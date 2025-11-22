@@ -66,16 +66,16 @@
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
-                    <th>Description</th>
+                    <th>Code</th>
                     <th>Actions</th>
                 </tr>
                 </thead>
                 <tbody>
                 <c:forEach var="cat" items="${categories}">
                     <tr>
-                        <td>${cat.id}</td>
-                        <td>${cat.name}</td>
-                        <td>${cat.description}</td>
+                        <td>${cat.categoryId}</td>
+                        <td>${cat.categoryName}</td>
+                        <td>${cat.categorycode}</td>
                         <td>
                             <a href="${pageContext.request.contextPath}/admin/categories/edit?id=${cat.id}" class="btn btn-primary btn-sm">Edit</a>
                             <a href="${pageContext.request.contextPath}/admin/categories/delete?id=${cat.id}"

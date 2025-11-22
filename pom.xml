@@ -84,6 +84,12 @@
             <artifactId>tomcat-catalina</artifactId>
             <version>11.0.13</version>
         </dependency>
+        <!-- Google API Client -->
+        <dependency>
+            <groupId>com.google.api-client</groupId>
+            <artifactId>google-api-client</artifactId>
+            <version>1.34.1</version>
+        </dependency>
 
     </dependencies>
 
